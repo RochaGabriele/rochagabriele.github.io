@@ -1,0 +1,31 @@
+.menu-link{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.menu-link:hover{
+    color: lightcoral;
+    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+}
+
+.menu-list{
+    list-style: none;
+    margin-left: -2rem;
+}
+
+.menu-item{
+    line-height: 3;
+}
+
+.aside-wrap{
+    left: 0;
+    top: 0;
+    position: absolute;
+    background-image: linear-gradient(to bottom right, red, black);/*darkslategrey;*/
+}
+
+html, body, .aside-wrap {
+    height: 100%;
+}
