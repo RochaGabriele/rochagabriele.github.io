@@ -1,31 +1,43 @@
-.menu-link{
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 16px;
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
 }
 
-.menu-link:hover{
-    color: lightcoral;
-    text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 1px 1px black;
+html, body, aside {
+height: 100%;
 }
 
-.menu-list{
-    list-style: none;
-    margin-left: -2rem;
+.aside-wrap {
+position: fixed;
+  top: 0;
+  background-image: linear-gradient(to bottom right, red, black);
+  width: 240px;
+  height: 100%;
+  padding: 100px 20px;
 }
 
-.menu-item{
-    line-height: 3;
+.aside-wrap .profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
 }
 
-.aside-wrap{
-    left: 0;
-    top: 0;
-    position: absolute;
-    background-image: linear-gradient(to bottom right, red, black);/*darkslategrey;*/
+.aside-wrap .menu-list {
+list-style: none;
 }
 
-html, body, .aside-wrap {
-    height: 100%;
+.aside-wrap .menu-item {
+line-height: 3;
+}
+
+.aside-wrap .menu-link {
+text-decoration: none;
+color: #fff;
+font-weight: bold;
+font-size: 18px;
+}
+
+.aside-wrap .menu-link:hover {
+border-bottom: 2px solid;
 }
