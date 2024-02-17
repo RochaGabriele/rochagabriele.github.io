@@ -11,7 +11,7 @@ height: 100%;
 .aside-wrap {
 position: fixed;
   top: 0;
-  background-image: linear-gradient(to bottom right, red, black);
+  background-image: linear-gradient(to bottom right, rgba(111, 231, 201, 0.767), rgba(34, 33, 33, 0.781));
   width: 240px;
   height: 100%;
   padding: 100px 20px;
@@ -21,10 +21,12 @@ position: fixed;
     width: 250px;
     height: 250px;
     border-radius: 5px;
+    box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, .5);
 }
 
 .aside-wrap .menu-list {
 list-style: none;
+margin-top: 20px;
 }
 
 .aside-wrap .menu-item {
