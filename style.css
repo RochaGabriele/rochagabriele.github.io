@@ -4,12 +4,12 @@
     font-family: sans-serif;
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
 html, body, aside, main, section {
 height: 100%;
+}
+
+html{
+  scroll-behavior: smooth;
 }
 
 section{
