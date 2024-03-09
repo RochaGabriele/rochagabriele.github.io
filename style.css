@@ -1,14 +1,25 @@
-*{
-    box-sizing: border-box;
+* {
+  box-sizing: border-box;
   margin: 0;
   font-family: sans-serif;
 }
 
-html, body, aside, main, section {
+:root {
+  --primary: #C94666;
+  --secondary: #78293D;
+  --hover: #5e2130;
+  --dark: #0a0405;
+}
+
+html,
+body,
+aside,
+main,
+section {
   height: 100%;
 }
 
-html{
+html {
   scroll-behavior: smooth;
 }
 
@@ -36,7 +47,8 @@ section {
 .aside-wrap {
   position: fixed;
   top: 0;
-  background-image: linear-gradient(to bottom right, rgba(111, 231, 201, 0.767), rgba(34, 33, 33, 0.781));
+  background-image: linear-gradient(to bottom right, var(--primary), var(--dark));
+  /* background-image: linear-gradient(to bottom right, rgba(111, 231, 201, 0.767), rgba(34, 33, 33, 0.781)); */
   width: 240px;
   height: 100%;
   padding: 100px 20px;
@@ -70,22 +82,24 @@ section {
 }
 
 /*Section*/
-section{
+section {
   max-width: 900px;
   margin: 10% 0 0 300px;
 
-  .section-title{
+  .section-title {
     font-size: 56px;
   }
-  .section-description{
+
+  .section-description {
     margin: 10px 0;
     font-size: 18px;
     line-height: 1.3;
   }
 }
-#home .email-link{
+
+#home .email-link {
   text-decoration: none;
-  color: rgb(57, 126, 106);
+  color: var(--primary);
 }
 
 .social-links {
@@ -94,7 +108,7 @@ section{
 
 .social-links li {
   display: inline-block;
-  background-color: red;
+  background-color: var(--primary);
   margin-right: 10px;
 }
 
@@ -105,5 +119,5 @@ section{
   font-weight: bold;
   font-size: 26px;
   text-decoration: none;
-  background-color: red;
+  background-color: var(--primary);
 }
